@@ -23,5 +23,4 @@ INSERT INTO metadb_statistics
             seq_scan = metadb_statistics.seq_scan + COALESCE(EXCLUDED.seq_scan, 0),
             idx_scan = metadb_statistics.idx_scan + COALESCE(EXCLUDED.idx_scan, 0)
 $$
-LANGUAGE SQL
-PARALLEL SAFE;
+LANGUAGE SQL;
