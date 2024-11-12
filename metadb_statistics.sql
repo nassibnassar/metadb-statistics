@@ -7,7 +7,7 @@ CREATE TABLE metadb_statistics (
     idx_scan bigint
 );
 
-CREATE OR REPLACE FUNCTION update_metadb_statistics()
+CREATE FUNCTION update_metadb_statistics()
 RETURNS void
 AS $$
 INSERT INTO metadb_statistics

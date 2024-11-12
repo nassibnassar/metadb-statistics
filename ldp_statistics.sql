@@ -7,7 +7,7 @@ CREATE TABLE ldp_statistics (
     idx_scan bigint
 );
 
-CREATE OR REPLACE FUNCTION update_ldp_statistics()
+CREATE FUNCTION update_ldp_statistics()
 RETURNS void
 AS $$
 INSERT INTO ldp_statistics
